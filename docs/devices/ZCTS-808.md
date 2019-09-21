@@ -5,7 +5,7 @@ description: "Integrate your Trust ZCTS-808 via Zigbee2mqtt with whatever smart 
 ---
 
 *To contribute to this page, edit the following
-[file](https://github.com/Koenkk/zigbee2mqtt.io/blob/master/docgen/device_page_notes.js)*
+[file](https://github.com/Koenkk/zigbee2mqtt.io/blob/master/docs/devices/ZCTS-808.md)*
 
 # Trust ZCTS-808
 
@@ -29,7 +29,6 @@ Although Home Assistant integration through [MQTT discovery](../integration/home
 manual integration is possbile with the following configuration:
 
 
-### ZCTS-808
 {% raw %}
 ```yaml
 binary_sensor:
@@ -40,6 +39,14 @@ binary_sensor:
     payload_off: true
     value_template: "{{ value_json.contact }}"
     device_class: "door"
+
+sensor:
+  - platform: "mqtt"
+    state_topic: "zigbee2mqtt/<FRIENDLY_NAME>"
+    availability_topic: "zigbee2mqtt/bridge/state"
+    unit_of_measurement: "%"
+    device_class: "battery"
+    value_template: "{{ value_json.battery }}"
 
 sensor:
   - platform: "mqtt"

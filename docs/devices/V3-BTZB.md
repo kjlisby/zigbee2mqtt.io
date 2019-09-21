@@ -5,7 +5,7 @@ description: "Integrate your Danalock V3-BTZB via Zigbee2mqtt with whatever smar
 ---
 
 *To contribute to this page, edit the following
-[file](https://github.com/Koenkk/zigbee2mqtt.io/blob/master/docgen/device_page_notes.js)*
+[file](https://github.com/Koenkk/zigbee2mqtt.io/blob/master/docs/devices/V3-BTZB.md)*
 
 # Danalock V3-BTZB
 
@@ -24,7 +24,6 @@ Although Home Assistant integration through [MQTT discovery](../integration/home
 manual integration is possbile with the following configuration:
 
 
-### V3-BTZB
 {% raw %}
 ```yaml
 lock:

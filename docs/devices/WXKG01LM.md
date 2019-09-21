@@ -5,7 +5,7 @@ description: "Integrate your Xiaomi WXKG01LM via Zigbee2mqtt with whatever smart
 ---
 
 *To contribute to this page, edit the following
-[file](https://github.com/Koenkk/zigbee2mqtt.io/blob/master/docgen/device_page_notes.js)*
+[file](https://github.com/Koenkk/zigbee2mqtt.io/blob/master/docs/devices/WXKG01LM.md)*
 
 # Xiaomi WXKG01LM
 
@@ -43,7 +43,6 @@ Although Home Assistant integration through [MQTT discovery](../integration/home
 manual integration is possbile with the following configuration:
 
 
-### WXKG01LM
 {% raw %}
 ```yaml
 sensor:

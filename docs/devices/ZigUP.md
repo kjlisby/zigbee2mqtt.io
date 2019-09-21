@@ -5,7 +5,7 @@ description: "Integrate your Custom devices (DiY) ZigUP via Zigbee2mqtt with wha
 ---
 
 *To contribute to this page, edit the following
-[file](https://github.com/Koenkk/zigbee2mqtt.io/blob/master/docgen/device_page_notes.js)*
+[file](https://github.com/Koenkk/zigbee2mqtt.io/blob/master/docs/devices/ZigUP.md)*
 
 # Custom devices (DiY) ZigUP
 
@@ -24,7 +24,6 @@ Although Home Assistant integration through [MQTT discovery](../integration/home
 manual integration is possbile with the following configuration:
 
 
-### ZigUP
 {% raw %}
 ```yaml
 switch:

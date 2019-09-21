@@ -5,7 +5,7 @@ description: "Integrate your IKEA ICPSHC24-10EU-IL-1 via Zigbee2mqtt with whatev
 ---
 
 *To contribute to this page, edit the following
-[file](https://github.com/Koenkk/zigbee2mqtt.io/blob/master/docgen/device_page_notes.js)*
+[file](https://github.com/Koenkk/zigbee2mqtt.io/blob/master/docs/devices/ICPSHC24-10EU-IL-1.md)*
 
 # IKEA ICPSHC24-10EU-IL-1
 
@@ -23,12 +23,20 @@ To factory reset the TRADFRI drivers use a
 small pin or paperclip to push the reset button once.
 
 
+### Device type specific configuration
+*[How to use device type specific configuration](../configuration/device_specific_configuration.md)*
+
+
+* `transition`: Controls the transition time (in seconds) of brightness,
+color temperature (if applicable) and color (if applicable) changes. Defaults to `0` (no transition).
+Note that this value is overridden if a `transition` value is present in the MQTT command payload.
+
+
 ## Manual Home Assistant configuration
 Although Home Assistant integration through [MQTT discovery](../integration/home_assistant) is preferred,
 manual integration is possbile with the following configuration:
 
 
-### ICPSHC24-10EU-IL-1
 {% raw %}
 ```yaml
 light:

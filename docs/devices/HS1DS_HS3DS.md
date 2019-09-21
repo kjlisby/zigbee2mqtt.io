@@ -5,7 +5,7 @@ description: "Integrate your HEIMAN HS1DS/HS3DS via Zigbee2mqtt with whatever sm
 ---
 
 *To contribute to this page, edit the following
-[file](https://github.com/Koenkk/zigbee2mqtt.io/blob/master/docgen/device_page_notes.js)*
+[file](https://github.com/Koenkk/zigbee2mqtt.io/blob/master/docs/devices/HS1DS/HS3DS.md)*
 
 # HEIMAN HS1DS/HS3DS
 
@@ -24,7 +24,6 @@ Although Home Assistant integration through [MQTT discovery](../integration/home
 manual integration is possbile with the following configuration:
 
 
-### HS1DS/HS3DS
 {% raw %}
 ```yaml
 binary_sensor:

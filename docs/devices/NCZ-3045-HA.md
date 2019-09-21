@@ -5,7 +5,7 @@ description: "Integrate your Nyce NCZ-3045-HA via Zigbee2mqtt with whatever smar
 ---
 
 *To contribute to this page, edit the following
-[file](https://github.com/Koenkk/zigbee2mqtt.io/blob/master/docgen/device_page_notes.js)*
+[file](https://github.com/Koenkk/zigbee2mqtt.io/blob/master/docs/devices/NCZ-3045-HA.md)*
 
 # Nyce NCZ-3045-HA
 
@@ -24,6 +24,8 @@ description: "Integrate your Nyce NCZ-3045-HA via Zigbee2mqtt with whatever smar
 
 * `temperature_precision`: Controls the precision of `temperature` values,
 e.g. `0`, `1` or `2`; default `2`.
+* `temperature_calibration`: Allows to manually calibrate temperature values,
+e.g. `1` would add 1 degree to the temperature reported by the device; default `0`.
 
 
 * `humidity_precision`: Controls the precision of `humidity` values, e.g. `0`, `1` or `2`; default `2`.
@@ -34,7 +36,6 @@ Although Home Assistant integration through [MQTT discovery](../integration/home
 manual integration is possbile with the following configuration:
 
 
-### NCZ-3045-HA
 {% raw %}
 ```yaml
 binary_sensor:

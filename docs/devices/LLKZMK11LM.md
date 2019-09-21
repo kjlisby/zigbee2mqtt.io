@@ -5,7 +5,7 @@ description: "Integrate your Xiaomi LLKZMK11LM via Zigbee2mqtt with whatever sma
 ---
 
 *To contribute to this page, edit the following
-[file](https://github.com/Koenkk/zigbee2mqtt.io/blob/master/docgen/device_page_notes.js)*
+[file](https://github.com/Koenkk/zigbee2mqtt.io/blob/master/docs/devices/LLKZMK11LM.md)*
 
 # Xiaomi LLKZMK11LM
 
@@ -24,7 +24,6 @@ Although Home Assistant integration through [MQTT discovery](../integration/home
 manual integration is possbile with the following configuration:
 
 
-### LLKZMK11LM
 {% raw %}
 ```yaml
 switch:

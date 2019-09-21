@@ -5,7 +5,7 @@ description: "Integrate your Xiaomi MCCGQ11LM via Zigbee2mqtt with whatever smar
 ---
 
 *To contribute to this page, edit the following
-[file](https://github.com/Koenkk/zigbee2mqtt.io/blob/master/docgen/device_page_notes.js)*
+[file](https://github.com/Koenkk/zigbee2mqtt.io/blob/master/docs/devices/MCCGQ11LM.md)*
 
 # Xiaomi MCCGQ11LM
 
@@ -30,7 +30,6 @@ Although Home Assistant integration through [MQTT discovery](../integration/home
 manual integration is possbile with the following configuration:
 
 
-### MCCGQ11LM
 {% raw %}
 ```yaml
 binary_sensor:

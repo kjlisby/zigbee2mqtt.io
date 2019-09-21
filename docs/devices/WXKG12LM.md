@@ -5,7 +5,7 @@ description: "Integrate your Xiaomi WXKG12LM via Zigbee2mqtt with whatever smart
 ---
 
 *To contribute to this page, edit the following
-[file](https://github.com/Koenkk/zigbee2mqtt.io/blob/master/docgen/device_page_notes.js)*
+[file](https://github.com/Koenkk/zigbee2mqtt.io/blob/master/docs/devices/WXKG12LM.md)*
 
 # Xiaomi WXKG12LM
 
@@ -30,7 +30,6 @@ Although Home Assistant integration through [MQTT discovery](../integration/home
 manual integration is possbile with the following configuration:
 
 
-### WXKG12LM
 {% raw %}
 ```yaml
 sensor:
@@ -47,6 +46,13 @@ sensor:
     unit_of_measurement: "%"
     device_class: "battery"
     value_template: "{{ value_json.battery }}"
+
+sensor:
+  - platform: "mqtt"
+    state_topic: "zigbee2mqtt/<FRIENDLY_NAME>"
+    availability_topic: "zigbee2mqtt/bridge/state"
+    icon: "mdi:gesture-double-tap"
+    value_template: "{{ value_json.action }}"
 
 sensor:
   - platform: "mqtt"

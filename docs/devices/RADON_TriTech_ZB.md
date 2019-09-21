@@ -5,7 +5,7 @@ description: "Integrate your Bosch RADON TriTech ZB via Zigbee2mqtt with whateve
 ---
 
 *To contribute to this page, edit the following
-[file](https://github.com/Koenkk/zigbee2mqtt.io/blob/master/docgen/device_page_notes.js)*
+[file](https://github.com/Koenkk/zigbee2mqtt.io/blob/master/docs/devices/RADON TriTech ZB.md)*
 
 # Bosch RADON TriTech ZB
 
@@ -24,6 +24,8 @@ description: "Integrate your Bosch RADON TriTech ZB via Zigbee2mqtt with whateve
 
 * `temperature_precision`: Controls the precision of `temperature` values,
 e.g. `0`, `1` or `2`; default `2`.
+* `temperature_calibration`: Allows to manually calibrate temperature values,
+e.g. `1` would add 1 degree to the temperature reported by the device; default `0`.
 
 
 ## Manual Home Assistant configuration
@@ -31,7 +33,6 @@ Although Home Assistant integration through [MQTT discovery](../integration/home
 manual integration is possbile with the following configuration:
 
 
-### RADON TriTech ZB
 {% raw %}
 ```yaml
 binary_sensor:

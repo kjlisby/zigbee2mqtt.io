@@ -5,14 +5,14 @@ description: "Integrate your Nue / 3A HGZB-01A via Zigbee2mqtt with whatever sma
 ---
 
 *To contribute to this page, edit the following
-[file](https://github.com/Koenkk/zigbee2mqtt.io/blob/master/docgen/device_page_notes.js)*
+[file](https://github.com/Koenkk/zigbee2mqtt.io/blob/master/docs/devices/HGZB-01A.md)*
 
 # Nue / 3A HGZB-01A
 
 | Model | HGZB-01A  |
 | Vendor  | Nue / 3A  |
-| Description | Smart light controller |
-| Supports | on/off, brightness |
+| Description | Smart in-wall switch |
+| Supports | on/off |
 | Picture | ![Nue / 3A HGZB-01A](../images/devices/HGZB-01A.jpg) |
 
 ## Notes
@@ -24,15 +24,15 @@ Although Home Assistant integration through [MQTT discovery](../integration/home
 manual integration is possbile with the following configuration:
 
 
-### HGZB-01A
 {% raw %}
 ```yaml
-light:
+switch:
   - platform: "mqtt"
     state_topic: "zigbee2mqtt/<FRIENDLY_NAME>"
     availability_topic: "zigbee2mqtt/bridge/state"
-    brightness: true
-    schema: "json"
+    payload_off: "OFF"
+    payload_on: "ON"
+    value_template: "{{ value_json.state }}"
     command_topic: "zigbee2mqtt/<FRIENDLY_NAME>/set"
 
 sensor:

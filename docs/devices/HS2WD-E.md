@@ -5,7 +5,7 @@ description: "Integrate your HEIMAN HS2WD-E via Zigbee2mqtt with whatever smart 
 ---
 
 *To contribute to this page, edit the following
-[file](https://github.com/Koenkk/zigbee2mqtt.io/blob/master/docgen/device_page_notes.js)*
+[file](https://github.com/Koenkk/zigbee2mqtt.io/blob/master/docs/devices/HS2WD-E.md)*
 
 # HEIMAN HS2WD-E
 
@@ -33,7 +33,6 @@ Although Home Assistant integration through [MQTT discovery](../integration/home
 manual integration is possbile with the following configuration:
 
 
-### HS2WD-E
 {% raw %}
 ```yaml
 sensor:

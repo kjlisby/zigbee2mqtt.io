@@ -228,7 +228,7 @@ After that the remote should show up as a paired device.
 `,
     },
     {
-        model: ['E1524'],
+        model: ['E1524/E1810'],
         note: `
 ### Pairing
 Pair the remote to Zigbee2mqtt by holding it close to the coordinator and
@@ -266,6 +266,12 @@ See [IKEA TRADFRI wireless dimmer (ICTC-G-1) not pairing](https://github.com/Koe
     {
         model: ['E1603/E1702'],
         note: `
+The TRADFRI control outlet also acts as a Zigbee router.
+`,
+    },
+    {
+        model: ['E1603/E1702'],
+        note: `
 ### Pairing
 To factory reset the TRADFRI control outlet, press and hold the reset button
 (pinhole underneath the light, located at the top (bottom if UK) of the outlet) with a
@@ -284,7 +290,7 @@ small pin or paperclip to push the reset button once.
     {
         vendor: 'IKEA',
         supports: ['brightness'],
-        notModel: ['E1524', 'ICPSHC24-10EU-IL-1', 'ICPSHC24-30EU-IL-1', 'ICTC-G-1'],
+        notModel: ['E1524/E1810', 'ICPSHC24-10EU-IL-1', 'ICPSHC24-30EU-IL-1', 'ICTC-G-1'],
         note: `
 ### Pairing
 Factory reset the light bulb ([video](https://www.youtube.com/watch?v=npxOrPxVfe0)).
@@ -406,21 +412,31 @@ experimenting with this option (e.g. \`long_timeout: 2000\`).
 `,
     },
 
-    // Temperatue humidty and pressure
+    // Device specific configuration
     {
-        supports: ['temperature', 'humidity', 'pressure'],
-        notSupports: ['color temperature'],
+        supports: ['temperature', 'humidity', 'pressure', 'brightness', 'color temperature', 'color', 'illuminance'],
+        notDescription: ['thermostat'],
         note: `
 ### Device type specific configuration
 *[How to use device type specific configuration](../configuration/device_specific_configuration.md)*
 `,
     },
     {
+        supports: ['illuminance'],
+        note: `
+* \`illuminance_calibration\`: Allows to manually calibrate illuminance values,
+e.g. \`95\` would take 95% to the illuminance reported by the device; default \`100\`.
+`,
+    },
+    {
         supports: ['temperature'],
         notSupports: ['color temperature'],
+        notDescription: ['thermostat'],
         note: `
 * \`temperature_precision\`: Controls the precision of \`temperature\` values,
 e.g. \`0\`, \`1\` or \`2\`; default \`2\`.
+* \`temperature_calibration\`: Allows to manually calibrate temperature values,
+e.g. \`1\` would add 1 degree to the temperature reported by the device; default \`0\`.
 `,
     },
     {
@@ -433,8 +449,19 @@ e.g. \`0\`, \`1\` or \`2\`; default \`2\`.
         supports: ['pressure'],
         note: `
 * \`pressure_precision\`: Controls the precision of \`pressure\` values, e.g. \`0\` or \`1\`; default \`1\`.
+* \`pressure_calibration\`: Allows to manually calibrate pressure values,
+e.g. \`1\` would add 1 to the pressure reported by the device; default \`0\`.
 `,
     },
+    {
+        supports: ['brightness', 'color temperature', 'color'],
+        note: `
+* \`transition\`: Controls the transition time (in seconds) of brightness,
+color temperature (if applicable) and color (if applicable) changes. Defaults to \`0\` (no transition).
+Note that this value is overridden if a \`transition\` value is present in the MQTT command payload.
+`,
+    },
+
     {
         model: ['9290012607', '9290019758'],
         note: `

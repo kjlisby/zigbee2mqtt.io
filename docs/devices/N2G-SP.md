@@ -5,7 +5,7 @@ description: "Integrate your NET2GRID N2G-SP via Zigbee2mqtt with whatever smart
 ---
 
 *To contribute to this page, edit the following
-[file](https://github.com/Koenkk/zigbee2mqtt.io/blob/master/docgen/device_page_notes.js)*
+[file](https://github.com/Koenkk/zigbee2mqtt.io/blob/master/docs/devices/N2G-SP.md)*
 
 # NET2GRID N2G-SP
 
@@ -24,7 +24,6 @@ Although Home Assistant integration through [MQTT discovery](../integration/home
 manual integration is possbile with the following configuration:
 
 
-### N2G-SP
 {% raw %}
 ```yaml
 sensor:

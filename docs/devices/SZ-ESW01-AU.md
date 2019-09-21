@@ -5,7 +5,7 @@ description: "Integrate your Sercomm SZ-ESW01-AU via Zigbee2mqtt with whatever s
 ---
 
 *To contribute to this page, edit the following
-[file](https://github.com/Koenkk/zigbee2mqtt.io/blob/master/docgen/device_page_notes.js)*
+[file](https://github.com/Koenkk/zigbee2mqtt.io/blob/master/docs/devices/SZ-ESW01-AU.md)*
 
 # Sercomm SZ-ESW01-AU
 
@@ -17,14 +17,15 @@ description: "Integrate your Sercomm SZ-ESW01-AU via Zigbee2mqtt with whatever s
 
 ## Notes
 
-None
+Pairing
+
+Press and hold the pairing button while plugging in the device.
 
 ## Manual Home Assistant configuration
 Although Home Assistant integration through [MQTT discovery](../integration/home_assistant) is preferred,
 manual integration is possbile with the following configuration:
 
 
-### SZ-ESW01-AU
 {% raw %}
 ```yaml
 sensor:

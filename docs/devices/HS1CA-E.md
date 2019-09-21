@@ -5,7 +5,7 @@ description: "Integrate your HEIMAN HS1CA-E via Zigbee2mqtt with whatever smart 
 ---
 
 *To contribute to this page, edit the following
-[file](https://github.com/Koenkk/zigbee2mqtt.io/blob/master/docgen/device_page_notes.js)*
+[file](https://github.com/Koenkk/zigbee2mqtt.io/blob/master/docs/devices/HS1CA-E.md)*
 
 # HEIMAN HS1CA-E
 
@@ -24,7 +24,6 @@ Although Home Assistant integration through [MQTT discovery](../integration/home
 manual integration is possbile with the following configuration:
 
 
-### HS1CA-E
 {% raw %}
 ```yaml
 binary_sensor:

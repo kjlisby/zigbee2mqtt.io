@@ -5,7 +5,7 @@ description: "Integrate your Nue / 3A HGZB-043 via Zigbee2mqtt with whatever sma
 ---
 
 *To contribute to this page, edit the following
-[file](https://github.com/Koenkk/zigbee2mqtt.io/blob/master/docgen/device_page_notes.js)*
+[file](https://github.com/Koenkk/zigbee2mqtt.io/blob/master/docs/devices/HGZB-043.md)*
 
 # Nue / 3A HGZB-043
 
@@ -24,7 +24,6 @@ Although Home Assistant integration through [MQTT discovery](../integration/home
 manual integration is possbile with the following configuration:
 
 
-### HGZB-043
 {% raw %}
 ```yaml
 switch:

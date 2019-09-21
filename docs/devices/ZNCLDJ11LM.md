@@ -5,7 +5,7 @@ description: "Integrate your Xiaomi ZNCLDJ11LM via Zigbee2mqtt with whatever sma
 ---
 
 *To contribute to this page, edit the following
-[file](https://github.com/Koenkk/zigbee2mqtt.io/blob/master/docgen/device_page_notes.js)*
+[file](https://github.com/Koenkk/zigbee2mqtt.io/blob/master/docs/devices/ZNCLDJ11LM.md)*
 
 # Xiaomi ZNCLDJ11LM
 
@@ -24,7 +24,6 @@ Although Home Assistant integration through [MQTT discovery](../integration/home
 manual integration is possbile with the following configuration:
 
 
-### ZNCLDJ11LM
 {% raw %}
 ```yaml
 cover:

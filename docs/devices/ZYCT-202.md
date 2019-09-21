@@ -5,7 +5,7 @@ description: "Integrate your Trust ZYCT-202 via Zigbee2mqtt with whatever smart 
 ---
 
 *To contribute to this page, edit the following
-[file](https://github.com/Koenkk/zigbee2mqtt.io/blob/master/docgen/device_page_notes.js)*
+[file](https://github.com/Koenkk/zigbee2mqtt.io/blob/master/docs/devices/ZYCT-202.md)*
 
 # Trust ZYCT-202
 
@@ -29,7 +29,6 @@ Although Home Assistant integration through [MQTT discovery](../integration/home
 manual integration is possbile with the following configuration:
 
 
-### ZYCT-202
 {% raw %}
 ```yaml
 sensor:

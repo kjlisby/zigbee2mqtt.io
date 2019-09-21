@@ -5,7 +5,7 @@ description: "Integrate your LivingWise LVS-SM10ZW via Zigbee2mqtt with whatever
 ---
 
 *To contribute to this page, edit the following
-[file](https://github.com/Koenkk/zigbee2mqtt.io/blob/master/docgen/device_page_notes.js)*
+[file](https://github.com/Koenkk/zigbee2mqtt.io/blob/master/docs/devices/LVS-SM10ZW.md)*
 
 # LivingWise LVS-SM10ZW
 
@@ -24,7 +24,6 @@ Although Home Assistant integration through [MQTT discovery](../integration/home
 manual integration is possbile with the following configuration:
 
 
-### LVS-SM10ZW
 {% raw %}
 ```yaml
 binary_sensor:

@@ -5,7 +5,7 @@ description: "Integrate your RGB Genie ZGRC-KEY-013 via Zigbee2mqtt with whateve
 ---
 
 *To contribute to this page, edit the following
-[file](https://github.com/Koenkk/zigbee2mqtt.io/blob/master/docgen/device_page_notes.js)*
+[file](https://github.com/Koenkk/zigbee2mqtt.io/blob/master/docs/devices/ZGRC-KEY-013.md)*
 
 # RGB Genie ZGRC-KEY-013
 
@@ -24,7 +24,6 @@ Although Home Assistant integration through [MQTT discovery](../integration/home
 manual integration is possbile with the following configuration:
 
 
-### ZGRC-KEY-013
 {% raw %}
 ```yaml
 sensor:
